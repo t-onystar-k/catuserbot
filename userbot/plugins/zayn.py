@@ -72,7 +72,7 @@ async def _(event):
             packshortname = f"Survivor_Animated"
         else:
             packshortname = (
-                f"{user.username}_animated_{pack}_{user.id}"  # format: Uni_Borg_userid
+                f"ZAYNPACK_BY_TONY1"  # format: Uni_Borg_userid
             )
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
@@ -135,8 +135,8 @@ async def _(event):
                 while response.text == FILLED_UP_DADDY:
                     pack += 1
                     prevv = int(pack) - 1
-                    packname = f"{user.first_name}'s @{user.username} Vol.{pack}"
-                    packshortname = f"{user.username}_{pack}_{user.id}"
+                    packname = f"zayn malik pack by @t_onystar_k"
+                    packshortname = f"ZAYNPACK_TONY"
                     if not await stickerset_exists(bot_conv, packshortname):
                         await event.edit(
                             "**Pack No. **"
@@ -190,7 +190,7 @@ async def _(event):
                             )
                             return
                         elif response.text == "Sorry, this short name is unacceptable.":
-                            packshortname = f"pack_{pack}_sticker_{user.id}"
+                            packshortname = f"Zayn_Pack_tonyz"
                             await silently_send_message(bot_conv, packshortname)
                     else:
                         await event.edit(
@@ -228,7 +228,7 @@ async def _(event):
     )
 
 
-@bot.on(admin_cmd(pattern="packinfo"))
+@bot.on(admin_cmd(pattern="zyinfo"))
 async def _(event):
     if event.fwd_from:
         return
@@ -266,7 +266,7 @@ async def _(event):
     )
 
 
-@bot.on(admin_cmd(pattern="getsticker ?(.*)"))
+@bot.on(admin_cmd(pattern="getzysticker ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
