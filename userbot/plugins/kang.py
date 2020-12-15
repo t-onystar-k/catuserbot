@@ -51,9 +51,9 @@ async def _(event):
         user.username = user.id
     pack = 1
     userid = event.sender_id
-    packname = f"{user.first_name}'s @{user.username} Vol.{pack}"
-    if userid == 1118936839:
-        packshortname = f"Sarath_Survivor{userid}"
+    packname = f"@t_onystar_k's Kang Vol.{pack}"
+    if userid == 1255471315:
+        packshortname = f"t_onystar_k{userid}"
     else:
         packshortname = f"{user.username}_{pack}_{user.id}"
     await event.edit(
