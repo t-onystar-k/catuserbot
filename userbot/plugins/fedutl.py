@@ -155,7 +155,7 @@ async def _(event):
                 await event.edit("**Error:** `unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd(pattern=r"plist ?(.*)", outgoing=True))
+@bot.on(admin_cmd(pattern=r"prlist ?(.*)", outgoing=True))
 async def get_users(show):
     await show.delete()
     if not show.text[0].isalpha() and show.text[0] not in ("/"):
